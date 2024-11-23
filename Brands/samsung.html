@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Samsung-brand</title>
+    <style>
+      .p3{
+        font-size: 36px;
+        font-weight: bold;
+      }
+      .p2:hover{
+        border: 2px;
+        border-style: solid;
+        border-color: lawngreen;
+        border-radius: 2px;
+      }
+      .dropdown{
+        position: relative;
+        display: block;
+        font-weight: 300;
+        margin-top: 0;
+      }
+
+      .dropdown-content{
+        display: none;
+        font-weight: 300;
+        font-size: 12px;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 4px 4px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover{
+        border: #ddd;
+        text-decoration: underline;
+        color: blue;
+      }
+      
+      .dropdown-content a:hover{
+        border: #ddd;
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .dropdown:hover .dropdown-content{
+        display: block;
+     }
+      .dropdown:hover{
+        border: 2px;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 2px;
+      }
+      .cart-quantity {
+        color: white;
+        border-radius: 50%;
+        background-color: red;
+        font-size: 14px;
+        font-weight: 700;
+
+        position: absolute;
+        top: 8px;
+        left: 30px;
+        
+        width: 20px;
+        text-align: center;
+      }
+      .cart-link {
+        color: black;
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-decoration: none;
+      }
+
+      .cart-link:hover{
+        border: 2px;
+        border-style: solid;
+        border-color: gray;
+        border-radius: 2px;
+      }
+
+      .cart-icon {
+        width: 30px;
+      }
+
+      .cart-text {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 400;
+        margin-left: 10px;
+      }
+      @media (max-width: 1100px) {
+        .p3{
+          display: block;
+          height: 30px;
+          font-size: 26px;
+          margin: auto;
+          font-weight: bold;
+        }
+        .dropdown{
+          font-size:1px;
+          width:12px;
+        }
+        .p2{
+          font-size: 12px;
+        }
+      }
+  </style>
+  </head>
+  <body>
+    <div class="header" style="display: grid; grid-template-columns: 18% 28% 18% 18% 18%;background-color: lawngreen; max-width: 100vw; min-width: 770px;padding-left:4%; position: fixed; left: 0; right: 0; top: 0; z-index:1000;">
+      <div class="div1"><p class="p3" style="margin: auto;">AQUARIUS</p></div>
+      <div style="margin-top: auto; margin-bottom: auto; max-width:227px; height: 26px; min-width: 24px; max-width: fit-content;"><input type="text" placeholder="Search products, brands and categories"><p class="p2" style="background-color: lawngreen; cursor: pointer;margin: 0; display: inline;">Search</p>
+      </div>
+      <div class="dropdown" style="cursor: pointer; margin-top: auto; margin-bottom: auto; width: 110px; height:26px;">
+            <div class="icon-cart">
+              <img src="images copy/profilepic.png" class="icon1" style="width: 18px;">
+              <p class="p1" style="display: inline-block; font-size: 18px; margin: 0;">ACCOUNT</p>
+            </div>
+        <div class="dropdown-content">
+          <a href="C:\Users\Michael\Desktop\Project KE\E-COMMERCE WEBSITE\AQUARIUS\Registration and log-in\Log-in.html">Log in</a>
+          <a href="C:\Users\Michael\Desktop\Project KE\E-COMMERCE WEBSITE\AQUARIUS\Registration and log-in\Register.html">Sign up</a>
+        </div>
+      </div>
+    
+      <div class="dropdown" style="cursor: pointer; margin-top: auto; margin-bottom: auto; width:70px;">
+        <div class="icon-cart">
+          <img src="images copy/help.png" class="icon1" style="width: 18px;">
+          <p class="p1" style="display: inline-block; font-size: 18px; margin: 0;">HELP</p>
+        </div>
+        <div class="dropdown-content" style="width: max-content;">
+          <a onclick="alert('Try searching using brand or type product name')" style="cursor:pointer">Can't find something?</a>
+          <a onclick="alert('Go to Account > log in > my profile')"  style="cursor:pointer">Track my order</a>
+          <a onclick="alert('Go to my account > sign up')" style="cursor:pointer">How to sign in</a>
+          <p style="margin: auto;">Need more assistance? <a href="About/contacts.html" style="cursor:pointer">Contact us!</a></p>
+          
+        </div>
+      </div>
+      <a class="cart-link header-link" href="C:\Users\Michael\Desktop\Project KE\E-COMMERCE WEBSITE\AQUARIUS\Cart and Checkout\Cart-tab.html" style="margin-top: auto; margin-bottom: auto; padding-left: 20px; width: 90px;">
+        <img class="cart-icon" src="images copy/cart.png" style="width: 26px;">
+        <div class="cart-quantity js-cart-quantity">0</div>
+        <div class="cart-text">CART</div>
+      </a>
+    </div>
+
+    <div class="lw-bottom" style="display: grid; grid-template-columns:repeat(5, 1fr);background-color: rgb(0, 0, 0); max-width: 100vw; min-width: 770px;padding-left:4%; height: 250px;">
+      <div class="dropdownb" style="width: 185px; height: 50px; margin-top: 10px;">
+        <button onclick="myFunction()" class="dropbtn">CONNECT WITH US</button>
+        <div id="myDropdown1" class="dropdown-content1" style="width:max-content; background-color: #000000;">
+          <a class="a" href="#">Facebook</a>
+          <a class="a" href="#">Twitter</a>
+          <a class="a" href="#">Instagram</a>
+          <a class="a" href="#">Whatsapp</a>
+        </div> 
+      </div>
+      <div class="left-bottom" style="color: white; margin-top: 20px; cursor: pointer; width: 65px; height: 20px;">
+        <a href="About/copyright-policy.html" style="text-decoration: none;">Copyright Policy</a>
+      </div>
+      <div class="mid-bottom" style="color: white; margin-top: 20px; cursor: pointer; width: 95px; height: 20px;">
+        <a href="About/privacy-policy.html" style="text-decoration: none;">Privacy Policy</a>
+      </div>
+      <div class="mid-bottom" style="color: white; margin-top: 20px; cursor: pointer; width: 95px; height: 20px;"> 
+        <a href="About/cookie-policy.html" style="text-decoration: none;">Cookie Policy</a>
+      </div>
+      <div class="mid-bottom" style="color: white; margin-top: 20px; cursor: pointer; width: 85px; height: 20px;">
+       <a href="About/terms-of-use.html" style="text-decoration: none;">Terms of use</a>
+      </div>
+    </div>
+  </body>
+</html>
